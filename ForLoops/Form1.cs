@@ -61,24 +61,30 @@ namespace ForLoops
             ///5. Create a loop that displays all leap years inclusive between 
             ///1990 and 2010. The output should be: 1992 1996 2000 2004 2008
             ///
-            int year;
             for (int i = 1990; i <= 2010; i++)
             {
-               //year % 4 == 0
-                //q5Output.Text += $"{i} ";
+                if (i % 4 == 0)
+                {
+                    q5Output.Text += $"{i} ";
+                }
             }
 
 
             ///6. Print the following patterns using a loop:
             ///
             /// *
-            /// **
+            /// ** string = *+ "*";
             /// ***
             /// ****
             /// *****
             /// 
             /// Hint: Start off with a string that has 1 "*" in it, then 
             /// in the loop you will add another "*" using +=
+            /// 
+            //string "*";
+            //for () 
+            //{
+            //}
         }
     }
 }
