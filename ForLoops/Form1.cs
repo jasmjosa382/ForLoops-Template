@@ -28,7 +28,7 @@ namespace ForLoops
                 //Refresh();
 
                 q1Output.Text += $"{i} ";
-                
+
             }
 
 
@@ -40,7 +40,7 @@ namespace ForLoops
             }
 
             ///3.  Create a loop that displays even numbers inclusive between 2 and 10
-            for (int i = 2; i <= 10; i = i +2)
+            for (int i = 2; i <= 10; i = i + 2)
             {
                 q3Output.Text += $"{i} ";
             }
@@ -50,7 +50,7 @@ namespace ForLoops
             ///
             int sum = 0;
 
-            for (int i = 1; i <= 10; i++) 
+            for (int i = 1; i <= 10; i++)
             {
                 sum = sum + i;
             }
@@ -81,10 +81,16 @@ namespace ForLoops
             /// Hint: Start off with a string that has 1 "*" in it, then 
             /// in the loop you will add another "*" using +=
             /// 
-            //string "*";
-            //for () 
-            //{
-            //}
+            string star = "*";
+
+            for (int i = 1; i <= 5; i++)
+            {
+                q6Output.Text += star+"\n";
+
+                star = star + "*";
+            }
+
+
         }
     }
 }
